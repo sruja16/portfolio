@@ -1,131 +1,100 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #fff;
-}
+body, html { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-color: #121212; color: #fff; }
 
-header {
-    background-color: #1a1a1a;
-    padding: 20px;
-}
+header { background-color: #1a1a1a; padding: 20px; }
+
+header nav { display: flex; justify-content: space-between; align-items: center; }
+
+header nav h1 { font-weight: 600; font-size: 1.5rem; }
+
+header nav ul { list-style-type: none; display: flex; gap: 20px; }
+
+header nav a { color: #fff; text-decoration: none; font-weight: 400; }
+
+header nav a:hover{ text-decoration: underline; color: rgb(86, 173, 240); }
+
+.hero { display: flex; justify-content: center; align-items: center; padding: 50px; background-color: #121212; gap: 30px; }
+
+.intro { max-width: 600px; margin-right: 50px; }
+
+.intro h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; }
+
+.intro p { margin-bottom: 20px; line-height: 1.6; }
+
+.download-btn { background-color: #00c853; padding: 10px 20px; color: #fff; border: none; border-radius: 5px; text-decoration: none; font-weight: 600; }
+
+.download-btn:hover{ background-color: #008035; }
+
+.profile-image img { width: 200px; height: 200px; border-radius: 50%; }
+
+.skills { padding: 50px; background-color: #0a0a0a; }
+
+.skills-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+
+.skill-category { width: 45%; }
+
+.skill-category h3 { font-weight: 600; margin-bottom: 10px; }
+
+.skill-icons { display: flex; gap: 15px; }
+
+.skill-icons img { width: 50px; height: 40px; }
+
+.projects{ padding: 50px; background-color: #0a0a0a; }
+
+.contact{ padding: 50px; background-color: #0a0a0a; }
+
+.contact-category { width: 45%; }
+
+.contact-category img{ width: 20px; height: 20px; }
+
+/* Responsive Styles */ @media (max-width: 768px) {
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
-header nav h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
+.hero {
+    flex-direction: column;
+    padding: 30px;
     gap: 20px;
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-    
-}
-header nav a:hover{
-    text-decoration: underline;
-    color: rgb(86, 173, 240);
-    
-}
-
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color: #121212;
-}
-
 .intro {
-    max-width: 600px;
-    margin-right: 50px;
-}
-
-.intro h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.download-btn {
-    background-color: #00c853;
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-}
-.download-btn:hover{
-    background-color: #008035;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
 }
 
 .profile-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.skills {
-    padding: 50px;
-    background-color: #0a0a0a;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .skill-category {
-    width: 45%;
+    width: 100%;
 }
 
-.skill-category h3 {
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.skill-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.skill-icons img {
-    width: 50px;
-    height: 40px;
-}
-.projects{
-    padding: 50px;
-    background-color: #0a0a0a;
-}
-.contact{
-    padding: 50px;
-    background-color: #0a0a0a;
+.projects, .contact {
+    padding: 30px;
 }
 
 .contact-category {
-    width: 45%;
-    
+    width: 100%;
 }
-.contact-category img{
-    width: 20px;
-    height: 20px;
+
+header nav ul {
+    flex-direction: column;
+    gap: 15px;
+}
+
+header nav a {
+    font-size: 1rem;
+}
+
 }
